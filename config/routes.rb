@@ -1,4 +1,10 @@
 Gchat::Application.routes.draw do
+  root :to => 'pages#home'
+
+  match '/tou' => 'pages#tou', as: :tou
+
+  match '/help' => 'pages#help', as: :help
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
